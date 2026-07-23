@@ -1,0 +1,216 @@
+<?xml version='1.0' encoding='utf-8'?>
+<MixxxControllerPreset mixxxVersion="2.6.0+" schemaVersion="1">
+    <info>
+        <name>Numark Party Mix III</name>
+        <author>stefets</author>
+        <description>Midi mapping for the Numark Party Mix III controller</description>
+    </info>
+    <controller id="Numark">
+        <scriptfiles>
+            <file filename="lodash.mixxx.js" functionprefix=""/>
+            <file filename="midi-components-0.0.js" functionprefix=""/>
+            <file filename="NumarkPartyMixIII.scripts.js" functionprefix="NumarkPartyMixIII"/>
+        </scriptfiles>
+        <controls>
+        	<!-- Master -->
+            <control>
+                <group>[Master]</group>
+                <key>gain</key>
+                <description>main_level</description>
+                <status>0xBF</status>
+                <midino>0x0A</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+            <control>
+                <group>[Master]</group>
+                <key>headGain</key>
+                <description>cue_level</description>
+                <status>0xBF</status>
+                <midino>0x0C</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+            <control>
+                <group>[Master]</group>
+                <key>NumarkPartyMixIII.crossFader.input</key>
+                <description>crossfader</description>
+                <status>0xBF</status>
+                <midino>0x08</midino>
+                <options>
+                    <script-binding/>
+                </options>
+            </control>
+            <control>
+                <group>[Master]</group>
+                <key>NumarkPartyMixIII.fadeFx.input</key>
+                <description>fadefx</description>
+                <status>0x9F</status>
+                <midino>0x46</midino>
+                <options>
+                    <script-binding/>
+                </options>
+            </control>
+            <!-- Library -->
+            <control>
+                <group>[Library]</group>
+                <key>NumarkPartyMixIII.browseEncoder.input</key>
+                <description>browse_encoder_rotate</description>
+                <status>0xBF</status>
+                <midino>0x00</midino>
+                <options>
+                    <script-binding/>
+                </options>
+            </control>
+            <control>
+                <group>[Library]</group>
+                <key>NumarkPartyMixIII.browseEncoder.input</key>
+                <description>browse_encoder_push_on</description>
+                <status>0x9F</status>
+                <midino>0x07</midino>
+                <options>
+                    <script-binding/>
+                </options>
+            </control>
+            <control>
+                <group>[Channel1]</group>
+                <key>NumarkPartyMixIII.leftDeck.loadButton.input</key>
+                <description>load</description>
+                <status>0x9F</status>
+                <midino>0x02</midino>
+                <options>
+                    <script-binding/>
+                </options>
+            </control>
+            <control>
+                <group>[Channel2]</group>
+                <key>NumarkPartyMixIII.rightDeck.loadButton.input</key>
+                <description>load</description>
+                <status>0x9F</status>
+                <midino>0x03</midino>
+                <options>
+                    <script-binding/>
+                </options>
+            </control>
+            <control>
+                <group>[Channel1]</group>
+                <key>NumarkPartyMixIII.leftDeck.loadButton.input</key>
+                <description>load</description>
+                <status>0x9F</status>
+                <midino>0x02</midino>
+                <options>
+                    <script-binding/>
+                </options>
+            </control>
+            <control>
+                <group>[Channel2]</group>
+                <key>NumarkPartyMixIII.rightDeck.loadButton.input</key>
+                <description>load</description>
+                <status>0x9F</status>
+                <midino>0x03</midino>
+                <options>
+                    <script-binding/>
+                </options>
+            </control>
+            <control>
+                <group>[Master]</group>
+                <key>NumarkPartyMixIII.leftDeck.filterLowSwitcher.input</key>
+                <description>load_shift</description>
+                <status>0x9F</status>
+                <midino>0x48</midino>
+                <options>
+                    <script-binding/>
+                </options>
+            </control>
+            <control>
+                <group>[Master]</group>
+                <key>NumarkPartyMixIII.rightDeck.scratchSwitcher.input</key>
+                <description>load_shift</description>
+                <status>0x9F</status>
+                <midino>0x49</midino>
+                <options>
+                    <script-binding/>
+                </options>
+            </control>
+            <!-- Mixer Area -->
+            <control>
+                <group>[Channel1]</group>
+                <key>volume</key>
+                <description>level</description>
+                <status>0xB0</status>
+                <midino>0x16</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+            <control>
+                <group>[Channel2]</group>
+                <key>volume</key>
+                <description>level</description>
+                <status>0xB1</status>
+                <midino>0x16</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+            <control>
+                <group>[Channel1]</group>
+                <key>NumarkPartyMixIII.leftDeck.filterLowPot.input</key>
+                <description>filter_low</description>
+                <status>0xB0</status>
+                <midino>0x1A</midino>
+                <options>
+                    <script-binding/>
+                </options>
+            </control>
+            <control>
+                <group>[Channel2]</group>
+                <key>NumarkPartyMixIII.rightDeck.filterLowPot.input</key>
+                <description>filter_low</description>
+                <status>0xB1</status>
+                <midino>0x1A</midino>
+                <options>
+                    <script-binding/>
+                </options>
+            </control>
+           
+            
+            
+            
+        	<!-- Mode -->
+        	<control>
+                <group>[Channel1]</group>
+                <key>NumarkPartyMixIII.leftDeck.mode.input</key>
+                <status>0x94</status>
+                <midino>0x00</midino>
+                <options>
+                    <script-binding/>
+                </options>
+            </control>
+            <control>
+                <group>[Channel2]</group>
+                <key>NumarkPartyMixIII.rightDeck.mode.input</key>
+                <status>0x95</status>
+                <midino>0x00</midino>
+                <options>
+                    <script-binding/>
+                </options>
+            </control>  
+            
+            
+            
+            <control>
+                <group>[Channel1]</group>
+                <key>NumarkPartyMixIII.leftDeck.testing.input</key>
+                <status>0x95</status>
+                <midino>0x17</midino>
+                <options>
+                    <script-binding/>
+                </options>
+            </control> 
+        </controls>
+        <outputs/>
+    </controller>
+</MixxxControllerPreset>
