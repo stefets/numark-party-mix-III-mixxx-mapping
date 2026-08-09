@@ -7,3 +7,12 @@
 😔 It's unfortunate that Serato isn't available for Linux; Windows and macOS users are invited to contribute to this mapping project. 🙏🏻
 
 🛟 All collaborations and contributions are welcome.
+
+# Installation
+* Copy the 2 files NumarkPartyMixIII.midi.xml and NumarkPartyMixIII.script.js in your home directory in ~/.mixxx/controllers/.
+* Start Mixxx >= 2.6
+* Open Preferences
+* In the Controllers options, select the `Numark Party Mix III MIDI 1` controller
+  * Click Enabled
+  * Click Load Mapping drop down
+    * Select Numark Party Mix III in the list, probably at the begin of the list
