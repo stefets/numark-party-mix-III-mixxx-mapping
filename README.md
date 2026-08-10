@@ -41,6 +41,17 @@
   * Click Load Mapping drop down
     * Select Numark Party Mix III in the list, probably at the begin of the list
 
+## Soundcard Setup
+
+This controller has a built-in 4 channel output sound card, with a stereo Main output (3.5mm jack) and stereo Headphone output (3.5mm jack).
+
+   - Open **Preferences** > **Sound Hardware**
+   - Select the **Output** tab.
+   - From the **Main** drop-down menu, select the audio interface, then **Channels 1-2**.
+   - From the **Headphones** drop-down menu, select the audio interface, then **Channels 3-4**.
+   - Click **Apply** to save the changes.
+
+
 ---
 
 😔 It's unfortunate that Serato isn't available for Linux; Windows and macOS users are invited to contribute to this mapping project. 🙏🏻
