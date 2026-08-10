@@ -180,24 +180,65 @@
                     <script-binding/>
                 </options>
             </control>
+            <!-- Deck Area -->
             <control>
                 <group>[Channel1]</group>
-                <key>rate</key>
-                <description>MIDI Learned from 620 messages.</description>
+                <key>NumarkPartyMixIII.leftDeck.tempoFader.input</key>
+                <description>rate_lsb</description>
+                <status>0xB0</status>
+                <midino>0x29</midino>
+                <options>
+                <script-binding/>
+                </options>
+            </control>
+            <control>
+                <group>[Channel1]</group>
+                <key>NumarkPartyMixIII.leftDeck.tempoFader.input</key>
+                <description>rate_msb</description>
                 <status>0xB0</status>
                 <midino>0x09</midino>
                 <options>
-                    <fourteen-bit-msb/>
+                <script-binding/>
                 </options>
             </control>
             <control>
                 <group>[Channel2]</group>
-                <key>rate</key>
-                <description>MIDI Learned from 602 messages.</description>
+                <key>NumarkPartyMixIII.rightDeck.tempoFader.input</key>
+                <description>rate_lsb</description>
+                <status>0xB1</status>
+                <midino>0x29</midino>
+                <options>
+                <script-binding/>
+                </options>
+            </control>
+            <control>
+                <group>[Channel2]</group>
+                <key>NumarkPartyMixIII.rightDeck.tempoFader.input</key>
+                <description>rate_msb</description>
                 <status>0xB1</status>
                 <midino>0x09</midino>
                 <options>
-                    <fourteen-bit-msb/>
+                <script-binding/>
+                </options>
+            </control>
+            <control>
+                <group>[Channel1]</group>
+                <key>NumarkPartyMixIII.leftDeck.mode.input</key>
+                <description>mode</description>
+                <status>0x94</status>
+                <midino>0x00</midino>
+                <options>
+                <script-binding/>
+                </options>
+            </control>
+            <control>
+                <group>[Channel2]</group>
+                <key>NumarkPartyMixIII.rightDeck.mode.input</key>
+                <description>mode</description>
+                <status>0x95</status>
+                <midino>0x00</midino>
+                <options>
+                <script-binding/>
                 </options>
             </control>
             <control>
@@ -658,26 +699,6 @@
                 <midino>0x1C</midino>
                 <options>
                     <normal/>
-                </options>
-            </control>
-            <control>
-                <group>[Channel1]</group>
-                <key>rate</key>
-                <description>MIDI Learned from 620 messages.</description>
-                <status>0xB0</status>
-                <midino>0x29</midino>
-                <options>
-                    <fourteen-bit-lsb/>
-                </options>
-            </control>
-            <control>
-                <group>[Channel2]</group>
-                <key>rate</key>
-                <description>MIDI Learned from 602 messages.</description>
-                <status>0xB1</status>
-                <midino>0x29</midino>
-                <options>
-                    <fourteen-bit-lsb/>
                 </options>
             </control>
             <control>
