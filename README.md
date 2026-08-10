@@ -27,7 +27,7 @@
 ### Faders
 * Crossfader
 * Volume
-* ⚠️ Playback speed with issue, it is inverted, the Invert option in the Wizard changed nothing.
+* Playback speed
 
 ---
 
