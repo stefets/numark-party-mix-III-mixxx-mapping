@@ -12,7 +12,7 @@ NumarkPartyMixIII.controls = {
     // control on the second position.
 
     // [Master]
-    "main_level": [0xBF, 0x0A],
+    "main_level": [0xBF, 0x0A], // Uncomment for Mixxx v2.6.0 and above,stemsStateConnection.trigger();
     "cue_level": [0xBF, 0x0C],
     "crossfader": [0xBF, 0x08],
     "fadefx": [0x9F, 0x46],
@@ -1081,8 +1081,9 @@ NumarkPartyMixIII.Deck = function(deckIndex, deckNumber) {
         cueConnection.trigger();
         playConnection.trigger();
         playAndCueShiftTrackLoadedConnection.trigger();
-
-        stemsStateConnection.trigger();
+        
+        // Uncomment for Mixxx v2.6.0 and above
+        //stemsStateConnection.trigger();
 
         // mode leds - controller always loads in hotcue
         NumarkPartyMixIII.led.setModeHotcueBright(deckIndex);
