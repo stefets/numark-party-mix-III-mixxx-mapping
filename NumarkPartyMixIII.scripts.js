@@ -12,7 +12,7 @@ NumarkPartyMixIII.controls = {
     // control on the second position.
 
     // [Master]
-    "main_level": [0xBF, 0x0A], // Uncomment for Mixxx v2.6.0 and above,stemsStateConnection.trigger();
+        "main_level": [0xBF, 0x0A],
     "cue_level": [0xBF, 0x0C],
     "crossfader": [0xBF, 0x08],
     "fadefx": [0x9F, 0x46],
@@ -952,6 +952,11 @@ NumarkPartyMixIII.Deck = function(deckIndex, deckNumber) {
         }
     });
 
+    const drumsStemGroup = `[Channel${deckNumber}_Stem1]`;
+    const bassStemGroup = `[Channel${deckNumber}_Stem2]`;
+    const synthsStemGroup = `[Channel${deckNumber}_Stem3]`;
+    const voiceStemGroup = `[Channel${deckNumber}_Stem4]`;
+
     // sets all stem pad leds according to their associated stem part mute state
     // should only be called when a stem track is loaded
     const setAllStemPadLeds = function() {
@@ -995,11 +1000,6 @@ NumarkPartyMixIII.Deck = function(deckIndex, deckNumber) {
     });
 
     // stem led coordination
-    const drumsStemGroup = `[Channel${deckNumber}_Stem1]`;
-    const bassStemGroup = `[Channel${deckNumber}_Stem2]`;
-    const synthsStemGroup = `[Channel${deckNumber}_Stem3]`;
-    const voiceStemGroup = `[Channel${deckNumber}_Stem4]`;
-
     const setAcapelAndInstruLed = function() {
         const isDrumStemMuted = engine.getValue(drumsStemGroup, "mute") === 1;
         const isBassStemMuted = engine.getValue(bassStemGroup, "mute") === 1;
@@ -1081,9 +1081,12 @@ NumarkPartyMixIII.Deck = function(deckIndex, deckNumber) {
         cueConnection.trigger();
         playConnection.trigger();
         playAndCueShiftTrackLoadedConnection.trigger();
-        
-        // Uncomment for Mixxx v2.6.0 and above
-        //stemsStateConnection.trigger();
+
+        try {
+            stemsStateConnection.trigger();
+        } catch (error) {
+            console.log(error);
+        }
 
         // mode leds - controller always loads in hotcue
         NumarkPartyMixIII.led.setModeHotcueBright(deckIndex);
